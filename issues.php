@@ -1,5 +1,11 @@
-<?php
-ECHO "Hello!<br>";
-echo "Welcome to Developer News<br>";
-EcHo "Enjoy all of the ad-free articles<br>";
+<?php declare(strict_types = 1);
+
+class HelloWorld
+{
+	public function sayHello(DateTimeImutable $date): void
+	{
+		echo 'Hello, ' . $date->format('j. n. Y');
+	}
+}
+
 ?>
