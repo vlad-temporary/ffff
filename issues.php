@@ -6,6 +6,17 @@ class HelloWorld
 	{
 		echo 'Hello, ' . $date->format('j. n. Y');
 	}
+	
+	public function sayNewHello(DateTimeImutable $date): void
+	{
+		echo 'Hello, ' . $date->format('j. n. Y');
+	}
+		
+	public function sayNewHello(DateTimeImutable $date): void
+	{
+		echo 'Hello, ' . $date->format('j. n. Y');
+		$date->asd();
+	}
 }
 
 ?>
