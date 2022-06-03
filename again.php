@@ -11,6 +11,11 @@ class HelloWorld
 	{
 		echo 'Hello, ' . $date->format('j. n. Y');
 	}
+	
+	public function sayHeldsdsdfsdfsdfgl123o(DateTimeImutable $date): void
+	{
+		echo 'Hello, ' . $date->format('j. n. Y');
+	}
 }
 
 ?>
