@@ -10,6 +10,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repo
+          uses: actions/checkout@v2
+      - name: Run Prisma Cloud 
+        id: prisma-cloud
+        uses: bridgecrewio/checkov-action@master 
+        with:
+          api-key: ${{ secrets.BC_API_KEY }}
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Build application
